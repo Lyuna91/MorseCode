@@ -59,9 +59,7 @@
             <img src="./images/icon-insta.png" alt="my IG account" class="footer-icon"/>
             <img src="./images/icon-person.png" alt="my account" class="footer-icon"/>
             <img src="./images/icon-discord.png" alt="my discord server" class="footer-icon"/>
-            <a href="goat.html">
-                <img src="./images/icon-goat.png" alt="the GOAT" class="footer-icon" id="GOAT">
-            </a>
+            <img src="./images/icon-goat.png" alt="the GOAT" class="footer-icon" id="GOAT">
         </footer>
         </div>
     </body>
