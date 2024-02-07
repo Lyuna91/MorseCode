@@ -1,0 +1,93 @@
+/* Réinitialisation des marges et des rembourrages par défaut */
+body, h1, h2, h3, p, table, th, td, form, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 15vh auto;
+    grid-template-areas: 
+    "header"
+    "main";
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+/* Style du corps de la page */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Ajoutez une police de caractères selon votre préférence */
+}
+
+/* Style pour les titres h1 */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style pour les tables */
+table {
+    width: 95%;
+    border: 1;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}
+
+th:hover{
+    background-color: white;
+    color : black;
+    
+
+}
+
+/* Style pour les formulaires */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input{
+    width: auto;
+    height: 2vh;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border: none;
+    text-align: left;
+}
+
+button {
+    padding: 10px;
+    background-color: #333; /* Couleur de fond pour le bouton */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style pour les liens */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style pour les liens dans un état survolé */
+a:hover {
+    text-decoration: underline;
+}

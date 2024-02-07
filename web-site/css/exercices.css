@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 15vh auto;
+    grid-template-areas: 
+        "header"
+        "main";
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 40vw;
+    border-radius: 20px;
+}
+
+span:hover{
+    border: 3px solid white;
+    transform: 0.3s;
+}

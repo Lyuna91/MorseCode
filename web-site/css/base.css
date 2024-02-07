@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'OCR A Std', monospace;
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+    transform: rotate(0deg);
+    transition-duration: 0.5s;
+}
+
+#logo:hover{
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+}
+/* TEXTES */
+
+p,h1,h2,h3,h4,h5,h6 {
+    color:white;
+}
+
+h2{
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* HEADER */
+
+header{
+    grid-area: header;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* BUTTONS (les différents type de boutons */
+
+/* Cette feuille de style va permettre de gérer l'apparence des différent boutons ! */
+
+
+/* Bouton de type A (Bouton blanc, avec des bordures chelous qui rendent bien je trouve)*/
+
+.button#A {
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px 20px;
+    color: black;
+    background-color: white;
+    max-width: 150px;
+    cursor: pointer;
+    transform: translateX(0);
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+.button#A:hover {
+    transform: translateX(20px); 
+    transition-duration: 0.5s;
+    text-decoration: none;
+}
+
+/* Bouton de type B (Bouton transparant avec bord blanc) */
+
+.button#B {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: color 0.5s;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    width: 50px;
+    height: 15px;
+}
+
+.button#B:hover{
+    color: black;
+    background-color: white ;
+    text-decoration: none;
+}
+
+/* Bouton */
+
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: color 0.5s;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    width: 50px;
+    height: 10px;
+}
+
+button:hover{
+    color: black;
+    background-color: white ;
+    text-decoration: none;
+}

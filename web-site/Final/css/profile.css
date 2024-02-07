@@ -1,0 +1,94 @@
+h2, h3, h4, h5, h6, p {
+    color: white;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+/* ORGANISATION DE LA PAGE */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-size: cover;
+    font-family: 'OCR A Std', monospace;
+    overflow-y: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+    grid-template-areas:
+        "header"
+        "main";
+}
+
+/* MAIN */
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span.infos {
+    margin-top: 15px;
+    padding: 10px;
+    height: 50vh;
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 5px 26px 5px rgba(0, 0, 0, 0.66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    justify-content: space-evenly;
+    transition-duration: 0.3s;
+}
+
+span.infos:hover {
+    border: 3px solid white;
+}
+
+/* ORGANISATION DU FORMULAIRE */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+label {
+    color: white;
+    align-self: flex-start;
+    margin-right: 2vw;
+}
+
+input {
+    width: 20vw;
+    height: 5vh;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: none;
+    text-align: left;
+}
+
+button {
+    margin-top: 10px;
+}
+
+/* Nouvelles règles CSS pour aligner les boutons côte à côte */
+span.infos a.button {
+    display: inline-block;
+    margin-right: 10px; /* Ajustez la marge entre les boutons selon vos préférences */
+}

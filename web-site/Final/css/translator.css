@@ -1,0 +1,46 @@
+/* Réinitialisation des marges et des rembourrages par défaut */
+body, h1, h2, h3, p, table, th, td, form, input, button {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Style du corps de la page */
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Style pour la classe container */
+.container {
+    display: grid;
+    grid-template-rows: 15vh 85vh;
+    grid-template-areas:
+    "header"
+    "main"; /* Une ligne de 15vh pour le header et le reste pour le main */
+}
+
+/* Style pour le main */
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Style pour le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espacement entre les colonnes */
+    padding: 20px; /* Ajout de marge intérieure pour un meilleur espacement */
+}
+
+
+/* Style pour les textarea */
+textarea {
+    height: 100px; /* Hauteur fixe pour une apparence équilibrée */
+    padding: 10px; /* Ajout de rembourrage pour une apparence agréable */
+}
+
+

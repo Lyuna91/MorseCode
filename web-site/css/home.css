@@ -1,0 +1,121 @@
+
+
+/* BASES DE LA PAGE (body, organisation de la page) */
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 15vh 95vh 95vh 20vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "nav"
+    "footer";
+}
+
+/* MAIN */
+
+main{
+    grid-area: main;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* NAV */
+
+nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-rows: 30vh 55vh;
+    grid-template-areas: 
+    "title"
+    "article";
+}
+
+.title{
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.navigation{
+    grid-area: article;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-end;
+    margin-top: 20px;
+    color: white;
+    padding: 20px;
+    height: 45vh;
+    width: 15vw;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    border: 2px solid transparent;
+}
+
+article:hover {
+    border-color: white; 
+    
+}
+
+
+.icon{
+    padding:  2px;
+    align-self: center;
+    height: 50px;
+    width: 50px;
+}
+
+ /* FOOTER */
+
+ footer{
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px -5px 18px 10px rgba(0,0,0,0.9);
+
+ }
+
+
+ .footer-icon{
+    height: 40px;
+    width: 40px;
+    transition: 0.5s;
+ }
+
+ .footer-icon:hover{
+    transform: scale(110%);
+    transition: 0.3s;
+ }
+
+ .footer-icon#GOAT:hover{
+    transform: rotate(180deg);
+ }
+
+ /* CROSSBAR */
+
+ #here:target{
+    scroll-margin-top: 15vh; 
+ }
